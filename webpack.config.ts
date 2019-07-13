@@ -1,6 +1,5 @@
 import { Configuration } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
 
 const config: Configuration = {
   entry: './src/entries/index.tsx',

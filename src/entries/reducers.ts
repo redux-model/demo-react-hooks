@@ -1,6 +1,6 @@
 import { combineReducers, Reducer } from 'redux';
 import { reducers } from '../models';
-import { EnhanceState } from '../../../index';
+import { EnhanceState } from 'redux-model-ts';
 
 declare global {
   type RootState = Readonly<ReturnType<typeof rootReducers>>;

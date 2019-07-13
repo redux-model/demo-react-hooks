@@ -3470,10 +3470,10 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
-redux-model-ts@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.npmjs.org/redux-model-ts/-/redux-model-ts-3.4.3.tgz#36e2959255485e79f895e4d60ae801a3374b1106"
-  integrity sha512-ETeZ40vLyKjsNHnp06u9l1pn7c8+1MwASzRKRDusmAfTLfkgnwh0tVzPLF7yuSEr6N8pVXGZoQLwQgm/u5H3HQ==
+redux-model-ts@3.4.4:
+  version "3.4.4"
+  resolved "https://registry.npmjs.org/redux-model-ts/-/redux-model-ts-3.4.4.tgz#7940d281e5a14e28984abb80dc8babd83117c741"
+  integrity sha512-n+YVvrKsH+Px7ovqufcUq6M+swnK6WGaqSdc2sQyXaeJjt+CXU9ahyGydy0Y9cuzGBWV53CSxJc7nEzQriUlBQ==
   dependencies:
     axios "^0.19.0"
     tslib "^1.10.0"
@@ -4179,9 +4179,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 typescript@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
-  integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
+  version "3.5.3"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
+  integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
 
 uglify-js@3.4.x:
   version "3.4.10"
