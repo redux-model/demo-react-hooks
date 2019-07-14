@@ -1,4 +1,4 @@
-import { Configuration } from 'webpack';
+import { Configuration, HotModuleReplacementPlugin } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config: Configuration = {
@@ -9,6 +9,7 @@ const config: Configuration = {
     new HtmlWebpackPlugin({
       template: './src/entries/index.html',
     }),
+    new HotModuleReplacementPlugin(),
   ],
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

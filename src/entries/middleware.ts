@@ -1,6 +1,7 @@
 import { Middleware } from 'redux';
 import thunk from 'redux-thunk';
 import { createRequestMiddleware, Model } from 'redux-model-ts';
+import { createLogger } from 'redux-logger';
 
 const apiMiddleware = createRequestMiddleware({
   id: Model.middlewareName,
@@ -25,4 +26,8 @@ const apiMiddleware = createRequestMiddleware({
   },
 });
 
-export const rootMiddleWares: Middleware[] = [thunk, apiMiddleware];
+export const rootMiddleWares: Middleware[] = [thunk, apiMiddleware, createLogger({
+  collapsed: true,
+  diff: true,
+  duration: true,
+})];
