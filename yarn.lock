@@ -3499,10 +3499,10 @@ redux-logger@^3.0.6:
   dependencies:
     deep-diff "^0.3.5"
 
-redux-model-ts@3.4.4:
-  version "3.4.4"
-  resolved "https://registry.npmjs.org/redux-model-ts/-/redux-model-ts-3.4.4.tgz#7940d281e5a14e28984abb80dc8babd83117c741"
-  integrity sha512-n+YVvrKsH+Px7ovqufcUq6M+swnK6WGaqSdc2sQyXaeJjt+CXU9ahyGydy0Y9cuzGBWV53CSxJc7nEzQriUlBQ==
+redux-model-ts@^3.4.4:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/redux-model-ts/-/redux-model-ts-3.5.0.tgz#cbf19dfe16704270e874eab6f611ad30aa266808"
+  integrity sha512-U4PXn1j3xpZB0DXmpo6GUpWBRSU6OEy4lDSGfpGXYdCVTidp/mgkbvUPqiJzRGuBNc2zUN6O0D4foOLkaPQ76A==
   dependencies:
     axios "^0.19.0"
     tslib "^1.10.0"
