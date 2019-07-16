@@ -11,7 +11,7 @@
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "redux": "^4.0.1",
-    "redux-model-ts": "^3.4.4",
+    "redux-model-ts": "^3.5.2",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
