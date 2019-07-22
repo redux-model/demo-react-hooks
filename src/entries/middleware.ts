@@ -1,6 +1,6 @@
 import { Middleware } from 'redux';
 import thunk from 'redux-thunk';
-import { createRequestMiddleware, Model } from 'redux-model-ts';
+import { createRequestMiddleware, HttpError, Model } from '@redux-model/web';
 import { createLogger } from 'redux-logger';
 
 const apiMiddleware = createRequestMiddleware({
@@ -11,7 +11,7 @@ const apiMiddleware = createRequestMiddleware({
       Accept: 'application/json',
     };
   },
-  onFail: (error: RM.HttpError<{ error: string, reason: string }>, transform) => {
+  onFail: (error: HttpError<{ error: string, reason: string }>, transform) => {
     if (error.response.data && error.response.data.reason) {
       transform.errorMessage = error.response.data.reason;
     }

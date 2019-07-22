@@ -1,4 +1,4 @@
-import { Model } from 'redux-model-ts';
+import { Model } from '@redux-model/web';
 
 interface Response {
   _id: string;
