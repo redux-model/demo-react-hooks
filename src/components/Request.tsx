@@ -23,7 +23,6 @@ const Request: FunctionComponent = () => {
 
   const handleClick = useCallback(() => {
     dispatch(npmInfoModel.manage.action('react-native'))
-      .promise
       .then(({ response }) => {
         console.log(`Wow, You got response from ${response._id}`);
       });
