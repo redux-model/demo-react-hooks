@@ -9,12 +9,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@redux-model/web@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/@redux-model/web/-/web-4.1.0.tgz#9121980e9cde2b8f9a1568e39d7aa3752ec0176a"
-  integrity sha512-vwFB9ABOu1A3ymTv1MT/tQW3a3ESJJ2CGJkzvzXOjtCuYPEVQN0T6euwFmIajV8FvO7/CESMEM1DFXCzOc8Tfg==
+"@redux-model/web@^4.2.6":
+  version "4.2.6"
+  resolved "https://registry.npmjs.org/@redux-model/web/-/web-4.2.6.tgz#924c5a6fd68be882a61763a6796a044a6c40214e"
+  integrity sha512-lIo+K6rD3d0+UX788QpSpEQEqnHt6t609QSl+kT0FlTtDK0/GcrbJJfEl5XuAoa3Pfucz4KIuViaeXzcPk+nzA==
   dependencies:
     axios "^0.19.0"
+    immer "^3.1.3"
     tslib "^1.10.0"
 
 "@types/anymatch@*":
@@ -2120,6 +2121,11 @@ ignore-walk@^3.0.1:
   integrity sha512-DTVlMx3IYPe0/JJcYP7Gxg7ttZZu3IInhuEhbchuqneY9wWe5Ojy2mXLBaQFUQmo0AW2r3qG7m1mg86js+gnlQ==
   dependencies:
     minimatch "^3.0.4"
+
+immer@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.npmjs.org/immer/-/immer-3.1.3.tgz#59bc742b2aab6e2c676445edb653e588a23c70fc"
+  integrity sha512-HG5SXTXTTVy9lGNwS075cNhQoV375jHsIJO3UtMjuUWJOuwlMr0u42FlsKTJcppt5AzsFAsmj9r4kHvsSHh3hQ==
 
 import-local@2.0.0, import-local@^2.0.0:
   version "2.0.0"

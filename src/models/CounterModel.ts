@@ -10,9 +10,7 @@ class CounterModel extends Model<Data> {
       return this.emit();
     },
     onSuccess: (state) => {
-      return {
-        amount: state.amount + 1,
-      };
+      state.amount += 1;
     },
   });
 
@@ -20,10 +18,8 @@ class CounterModel extends Model<Data> {
     action: () => {
       return this.emit();
     },
-    onSuccess: () => {
-      return {
-        amount: 0,
-      };
+    onSuccess: (state) => {
+      state.amount = 0;
     },
   });
 
