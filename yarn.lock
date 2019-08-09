@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@redux-model/web@^4.2.8":
-  version "4.2.8"
-  resolved "https://registry.npmjs.org/@redux-model/web/-/web-4.2.8.tgz#4f5c7eb13ff1eee67df908dc42fbd81f8dbde321"
-  integrity sha512-5++jrVsTLE4g9t3Iv6SO2yKo97xb5XPqdDxgcEAvZpCsLR0T2p8/u/H/ESPbGqPmqxb7OZ04PWqCK6R5/NwqMw==
+"@redux-model/web@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.npmjs.org/@redux-model/web/-/web-4.3.1.tgz#5a8cc558a6bc7bee4f00c887a4a8490911428278"
+  integrity sha512-6TobUretHCj0KvNQ+Iaz6BBASwSPhMxXKdnbAgbN93cidu4E02rgyFQ90qIesxqEAY4NjXAPxR2RihPTY9+n6g==
   dependencies:
     axios "^0.19.0"
     immer "^3.1.3"
