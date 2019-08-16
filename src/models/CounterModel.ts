@@ -13,11 +13,11 @@ class CounterModel extends Model<Data> {
     state.amount = 0;
   });
 
-  resetThunk = this.actionThunk(() => {
+  public resetThunk() {
     if (this.connectData().amount !== 0) {
       this.reset.action();
     }
-  });
+  }
 
   protected initReducer(): Data {
     return {

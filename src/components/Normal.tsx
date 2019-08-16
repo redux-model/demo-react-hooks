@@ -23,7 +23,7 @@ const Normal: FunctionComponent = () => {
   }, []);
 
   const handleReset = useCallback(() => {
-    counterModel.resetThunk.action();
+    counterModel.resetThunk();
   }, []);
 
   return (
