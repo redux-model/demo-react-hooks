@@ -5,32 +5,18 @@ type Data = {
 };
 
 class CounterModel extends Model<Data> {
-  increase = this.actionNormal({
-    action: () => {
-      return this.emit();
-    },
-    onSuccess: (state) => {
-      state.amount += 1;
-    },
+  increase = this.actionNormal((state) => {
+    state.amount += 1;
   });
 
-  reset = this.actionNormal({
-    action: () => {
-      return this.emit();
-    },
-    onSuccess: (state) => {
-      state.amount = 0;
-    },
+  reset = this.actionNormal((state) => {
+    state.amount = 0;
   });
 
   resetThunk = this.actionThunk(() => {
-    return (dispatch) => {
-      if (this.connectData().amount !== 0) {
-        return dispatch(this.reset.action());
-      }
-
-      return;
-    };
+    if (this.connectData().amount !== 0) {
+      this.reset.action();
+    }
   });
 
   protected initReducer(): Data {

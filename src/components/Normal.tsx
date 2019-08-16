@@ -1,5 +1,4 @@
 import React, { CSSProperties, FunctionComponent, useCallback } from 'react';
-import { useDispatch } from 'react-redux';
 import { counterModel } from '../models/CounterModel';
 
 const styles: CSSProperties = {
@@ -17,15 +16,14 @@ const styles: CSSProperties = {
 };
 
 const Normal: FunctionComponent = () => {
-  const dispatch = useDispatch();
   const count = counterModel.useData((data) => data.amount);
 
   const handleClick = useCallback(() => {
-    dispatch(counterModel.increase.action());
+    counterModel.increase.action();
   }, []);
 
   const handleReset = useCallback(() => {
-    dispatch(counterModel.resetThunk());
+    counterModel.resetThunk.action();
   }, []);
 
   return (

@@ -27,13 +27,8 @@ class NpmInfoModel extends Model<Data> {
     meta: true,
   });
 
-  reset = this.actionNormal({
-    action: () => {
-      return this.emit();
-    },
-    onSuccess: () => {
-      return {};
-    },
+  reset = this.actionNormal(() => {
+    return {};
   });
 
   protected initReducer(): Data {

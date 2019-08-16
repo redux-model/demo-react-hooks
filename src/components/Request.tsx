@@ -1,5 +1,4 @@
 import React, { CSSProperties, FunctionComponent, useCallback } from 'react';
-import { useDispatch } from 'react-redux';
 import { npmInfoModel } from '../models/NpmInfoModel';
 
 const styles: CSSProperties = {
@@ -17,27 +16,26 @@ const styles: CSSProperties = {
 };
 
 const Request: FunctionComponent = () => {
-  const dispatch = useDispatch();
   const npmInfo = npmInfoModel.useData();
   const loading = npmInfoModel.manage.useLoading();
 
   const handleClick = useCallback(() => {
-    dispatch(npmInfoModel.manage.action('react-native'))
+    npmInfoModel.manage.action('react-native')
       .then(({ response }) => {
         console.log(`Wow, You got response from ${response._id}`);
       });
   }, []);
 
   const handleClick1 = useCallback(() => {
-    dispatch(npmInfoModel.manage.action('node'));
+    npmInfoModel.manage.action('node');
   }, []);
 
   const handleClick2 = useCallback(() => {
-    dispatch(npmInfoModel.manage.action('not-existed-package'));
+    npmInfoModel.manage.action('not-existed-package');
   }, []);
 
   const handleReset = useCallback(() => {
-    dispatch(npmInfoModel.reset.action());
+    npmInfoModel.reset.action();
   }, []);
 
   return (

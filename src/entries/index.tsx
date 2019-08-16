@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
-import { applyMiddleware, compose, createStore } from 'redux';
+import { applyMiddleware, compose } from 'redux';
 import { rootReducers } from './reducers';
 import { rootMiddleWares } from './middleware';
 import App from '../components/App';
+import { createReduxStore } from '@redux-model/web';
 
-const store = createStore(
+const store = createReduxStore(
   rootReducers,
   compose(applyMiddleware(...rootMiddleWares)),
 );
