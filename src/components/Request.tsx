@@ -24,7 +24,6 @@ const Request: FunctionComponent = () => {
       .then(({ response }) => {
         console.log(`Wow, You got response from ${response._id}`);
       });
-    npmInfoModel.manage.useLoading();
   }, []);
 
   const handleClick1 = useCallback(() => {
