@@ -20,22 +20,23 @@ const Request: FunctionComponent = () => {
   const loading = npmInfoModel.manage.useLoading();
 
   const handleClick = useCallback(() => {
-    npmInfoModel.manage.action('react-native')
+    npmInfoModel.manage('react-native')
       .then(({ response }) => {
         console.log(`Wow, You got response from ${response._id}`);
       });
+    npmInfoModel.manage.useLoading();
   }, []);
 
   const handleClick1 = useCallback(() => {
-    npmInfoModel.manage.action('node');
+    npmInfoModel.manage('node');
   }, []);
 
   const handleClick2 = useCallback(() => {
-    npmInfoModel.manage.action('not-existed-package');
+    npmInfoModel.manage('not-existed-package');
   }, []);
 
   const handleReset = useCallback(() => {
-    npmInfoModel.reset.action();
+    npmInfoModel.reset();
   }, []);
 
   return (

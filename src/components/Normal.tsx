@@ -19,7 +19,7 @@ const Normal: FunctionComponent = () => {
   const count = counterModel.useData((data) => data.amount);
 
   const handleClick = useCallback(() => {
-    counterModel.increase.action();
+    counterModel.increase();
   }, []);
 
   const handleReset = useCallback(() => {

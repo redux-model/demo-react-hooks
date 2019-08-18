@@ -15,7 +15,7 @@ class CounterModel extends Model<Data> {
 
   public resetThunk() {
     if (this.connectData().amount !== 0) {
-      this.reset.action();
+      this.reset();
     }
   }
 
