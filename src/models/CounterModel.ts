@@ -13,8 +13,8 @@ class CounterModel extends Model<Data> {
     state.amount = 0;
   });
 
-  public resetThunk() {
-    if (this.connectData().amount !== 0) {
+  public comboReset() {
+    if (this.data.amount !== 0) {
       this.reset();
     }
   }
