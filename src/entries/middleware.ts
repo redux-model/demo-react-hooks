@@ -10,7 +10,7 @@ const apiMiddleware = createRequestMiddleware({
       Accept: 'application/json',
     };
   },
-  onFail: (error: HttpError<{ error: string, reason: string }>, transform) => {
+  onRespondError: (error: HttpError<{ error: string, reason: string }>, transform) => {
     if (error.response.data && error.response.data.reason) {
       transform.errorMessage = error.response.data.reason;
     }
