@@ -11,8 +11,8 @@ type Data = Partial<Response>;
 class NpmInfoModel extends Model<Data> {
   manage = this.actionRequest({
     action: (packageName: string) => {
-      return this.get<Response>({
-        uri: '/' + packageName,
+      return this.get({
+        uri: this.uri<Response>('/' + packageName),
         query: {
           noCache: Date.now(),
         },
