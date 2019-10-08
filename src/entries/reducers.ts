@@ -1,9 +1,5 @@
-import { combineReducers, Reducer } from 'redux';
-import { reducers } from '../models';
-import { EnhanceState } from '@redux-model/web';
+import { summaryModel } from '../models/SummaryModel';
 
-declare global {
-  type RootState = Readonly<ReturnType<typeof rootReducers>>;
-}
-
-export const rootReducers: Reducer<EnhanceState<typeof reducers>> = combineReducers(reducers);
+export const rootReducers = {
+  ...summaryModel.register(),
+};
