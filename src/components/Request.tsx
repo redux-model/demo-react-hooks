@@ -74,7 +74,8 @@ const Request: FunctionComponent = () => {
           Reset
         </button>
         &nbsp;&nbsp;
-        {loading && <b style={{ color: 'green' }}>I am fetching...</b>}
+        <br />
+        {loading ? <b style={{ color: 'green' }}>I am fetching...</b> : <span>&nbsp;</span> }
       </div>
     </div>
   );
