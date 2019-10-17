@@ -10,18 +10,15 @@ interface Response {
 type Data = Partial<Response>;
 
 class NpmInfoModel extends Model<Data> {
-  manage = this.actionRequest({
-    action: (packageName: string) => {
-      return api.get({
-        uri: this.uri<Response>('/' + packageName),
-        query: {
-          noCache: Date.now(),
-        },
+  manage = api.get((packageName: string) => {
+    return this
+      .uri<Response>('/' + packageName)
+      .query({
+        noCache: Date.now()
+      })
+      .onSuccess((_, action) => {
+        return action.response;
       });
-    },
-    onSuccess: (_, action) => {
-      return action.response;
-    },
   });
 
   async combo(packageName: string) {
@@ -41,7 +38,7 @@ class NpmInfoModel extends Model<Data> {
     });
   }
 
-  reset = this.actionNormal(() => {
+  reset = this.action(() => {
     return {};
   });
 

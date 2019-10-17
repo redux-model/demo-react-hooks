@@ -5,11 +5,11 @@ type Data = {
 };
 
 class CounterModel extends Model<Data> {
-  increase = this.actionNormal((state) => {
+  increase = this.action((state) => {
     state.amount += 1;
   });
 
-  reset = this.actionNormal((state) => {
+  reset = this.action((state) => {
     state.amount = 0;
   });
 
