@@ -10,9 +10,9 @@ interface Response {
 type Data = Partial<Response>;
 
 class NpmInfoModel extends Model<Data> {
-  manage = api.get((packageName: string) => {
+  manage = api.action((packageName: string) => {
     return this
-      .uri<Response>('/' + packageName)
+      .get<Response>('/' + packageName)
       .query({
         noCache: Date.now()
       })
