@@ -10,14 +10,10 @@ class CounterModel extends Model<Data> {
   });
 
   reset = this.action((state) => {
-    state.amount = 0;
-  });
-
-  public comboReset() {
     if (this.data.amount !== 0) {
-      this.reset();
+      state.amount = 0;
     }
-  }
+  });
 
   protected initReducer(): Data {
     return {
