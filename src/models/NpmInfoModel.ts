@@ -32,10 +32,6 @@ class NpmInfoModel extends Model<Data> {
     this.changeReducer((state) => {
       state.homepage = info.response.homepage;
     });
-
-    this.changeReducer((state) => {
-      state.homepage = info.response._id;
-    });
   }
 
   reset = this.action(() => {
