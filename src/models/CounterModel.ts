@@ -10,7 +10,7 @@ class CounterModel extends Model<Data> {
   });
 
   reset = this.action((state) => {
-    if (this.data.amount !== 0) {
+    if (state.amount !== 0) {
       state.amount = 0;
     }
   });
