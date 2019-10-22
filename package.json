@@ -7,11 +7,12 @@
     "start": "yarn && node_modules/.bin/webpack-dev-server"
   },
   "dependencies": {
-    "@redux-model/web": "^6.3.0",
+    "@redux-model/web": "^6.4.0-beta.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.1",

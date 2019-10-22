@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@redux-model/web@^6.3.0":
-  version "6.3.0"
-  resolved "https://registry.npmjs.org/@redux-model/web/-/web-6.3.0.tgz#f6fedd47602f1412950627ee41aa5ef03def3c99"
-  integrity sha512-HJtAJ+iM/gNpD7iEXbpjRzwPAsUfyMPOhij4YtCVw3fqwKYqtR+E94Yp2161153MaK/MXv53leIJJsu+QweBDA==
+"@redux-model/web@^6.4.0-beta.1":
+  version "6.4.0-beta.1"
+  resolved "https://registry.npmjs.org/@redux-model/web/-/web-6.4.0-beta.1.tgz#59a001cca0abf621fe0b5b12cb7303fbb5548a41"
+  integrity sha512-IGthituL+/nTIKTUf566qLCUuGjYVGKeKpCTkcCR1D+Z9vzmKCQD75WVfa7NqVe2exlAacNlopZuS3xyhSJWHQ==
   dependencies:
     axios "^0.19.0"
     immer "^4.0.1"
@@ -3590,6 +3590,11 @@ redux-logger@^3.0.6:
   integrity sha1-91VZZvMJjzyIYExEnPC69XeCdL8=
   dependencies:
     deep-diff "^0.3.5"
+
+redux-persist@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/redux-persist/-/redux-persist-6.0.0.tgz#b4d2972f9859597c130d40d4b146fecdab51b3a8"
+  integrity sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==
 
 redux@^3.6.0:
   version "3.7.2"
