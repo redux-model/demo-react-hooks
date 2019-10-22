@@ -1,6 +1,6 @@
-# redux-model-ts-demo
+# redux-model-web-demo
 
-It's a simple project for package [redux-model-ts](https://github.com/fwh1990/redux-model-ts)
+It's a simple project for package [redux-model](https://github.com/fwh1990/redux-model)
 
 # Run Demo
 
