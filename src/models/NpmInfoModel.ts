@@ -1,5 +1,5 @@
 import { Model } from '@redux-model/web';
-import { api } from '../libraries/httpService/Api';
+import { $api } from '../libraries/httpService/$api';
 
 interface Response {
   _id: string;
@@ -10,7 +10,7 @@ interface Response {
 type Data = Partial<Response>;
 
 class NpmInfoModel extends Model<Data> {
-  manage = api.action((packageName: string) => {
+  manage = $api.action((packageName: string) => {
     return this
       .get<Response>('/' + packageName)
       .query({
@@ -22,7 +22,7 @@ class NpmInfoModel extends Model<Data> {
   });
 
   async combo(packageName: string) {
-    const info = await api.getAsync<Response>({
+    const info = await $api.getAsync<Response>({
       uri: '/' + packageName,
       query: {
         noCache: Date.now(),
