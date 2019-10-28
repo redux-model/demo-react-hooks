@@ -9,13 +9,14 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@redux-model/web@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.npmjs.org/@redux-model/web/-/web-6.4.2.tgz#721d9ce7dfd86ea7f10bb57a21304cda4a586a89"
-  integrity sha512-2hbsFSXStlrErzvXrhWNeIaSAOM4fs+bQv45IlKr32ephGP7tnRP6kCuVIP/+2wJ4B7T86lDXsWE/YUCOA+K1A==
+"@redux-model/web@^6.5.2":
+  version "6.5.2"
+  resolved "https://registry.npmjs.org/@redux-model/web/-/web-6.5.2.tgz#b7daee60779ec0b514069788d7b0de91a8f2789d"
+  integrity sha512-rT2pJd4lJa0thOQDI0vAWlJYGrSorFKyP6DYnncKVRiLwdFDyesth6TAl9vDt2SLrxfab+HUfeiKOT6xXQuy+A==
   dependencies:
     axios "^0.19.0"
     immer "^4.0.1"
+    lodash.clonedeep "^4.5.0"
     tslib "^1.10.0"
 
 "@types/anymatch@*":
@@ -2573,6 +2574,11 @@ lodash-es@^4.2.1:
   version "4.17.15"
   resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
   integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+
+lodash.clonedeep@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
 lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.5, lodash@^4.2.1:
   version "4.17.15"

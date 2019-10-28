@@ -13,9 +13,7 @@ class NpmInfoModel extends Model<Data> {
   manage = $api.action((packageName: string) => {
     return this
       .get<Response>('/' + packageName)
-      .query({
-        noCache: Date.now()
-      })
+      .cache(1000)
       .onSuccess((_, action) => {
         return action.response;
       });

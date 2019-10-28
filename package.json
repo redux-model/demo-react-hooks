@@ -7,7 +7,7 @@
     "start": "yarn && node_modules/.bin/webpack-dev-server"
   },
   "dependencies": {
-    "@redux-model/web": "^6.4.2",
+    "@redux-model/web": "^6.5.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
