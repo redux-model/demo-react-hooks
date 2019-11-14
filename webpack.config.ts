@@ -1,27 +1,10 @@
-import { Configuration, HotModuleReplacementPlugin } from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+import webpackGenius from 'webpack-genius';
 
-const config: Configuration = {
-  entry: './src/entries/index.tsx',
-  mode: 'development',
-  devtool: 'source-map',
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/entries/index.html',
-    }),
-    new HotModuleReplacementPlugin(),
-  ],
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
-      },
-    ],
-  },
-};
-
-export default config;
+export default webpackGenius(8080, (genius) => {
+  genius
+    .entry('./src/entries/index.tsx')
+    .devtool('source-map')
+    .pluginHtml((plugin) => {
+      plugin.setTemplate('./src/entries/index.html');
+    })
+});
