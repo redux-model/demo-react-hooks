@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React, { FunctionComponent } from 'react';
 import Normal from './Normal';
 import Request from './Request';
@@ -13,4 +14,4 @@ const App: FunctionComponent = () => {
   );
 };
 
-export default App;
+export default hot(App);
