@@ -3,30 +3,24 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 import { applyMiddleware, compose } from 'redux';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 import { rootReducers } from './reducers';
 import { rootMiddleWares } from './middleware';
 import App from '../components/App';
-import { createReduxStore } from '@redux-model/web';
-import { PersistGate } from 'redux-persist/integration/react';
+import { createReduxStore, PersistGate } from '@redux-model/web';
 
 const store = createReduxStore({
   reducers: rootReducers,
   enhancer: compose(applyMiddleware(...rootMiddleWares)),
-  onCombineReducers: (reducer) => {
-    return persistReducer({
-      key: 'root',
-      storage,
-    }, reducer);
+  persist: {
+    version: '0.0.1',
+    key: 'demo-react-hooks',
+    storage: localStorage,
   },
 });
 
-const persistor = persistStore(store);
-
 ReactDom.render(
   <Provider store={store}>
-    <PersistGate persistor={persistor} loading={null}>
+    <PersistGate>
       <App />
     </PersistGate>
   </Provider>,

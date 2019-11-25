@@ -13,7 +13,7 @@ class NpmInfoModel extends Model<Data> {
   manage = $api.action((packageName: string) => {
     return this
       .get<Response>('/' + packageName)
-      .cache(1000)
+      .throttle(1000)
       .onSuccess((_, action) => {
         return action.response;
       });
