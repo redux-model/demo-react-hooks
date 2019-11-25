@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "demo-react-hooks",
   "version": "1.0.0",
   "main": "./src/entries/index.tsx",
   "license": "MIT",
@@ -15,7 +15,6 @@
     "redux": "^4.0.4"
   },
   "devDependencies": {
-    "@hot-loader/react-dom": "^16.11.0",
     "@types/node": "^12.12.11",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.4",
@@ -23,6 +22,6 @@
     "@types/redux-logger": "^3.0.7",
     "redux-logger": "^3.0.6",
     "typescript": "^3.7.2",
-    "webpack-genius": "^4.1.4"
+    "webpack-genius": "^4.2.1"
   }
 }
