@@ -7828,10 +7828,10 @@ webpack-dev-server@^3.9.0:
     ws "^6.2.1"
     yargs "12.0.5"
 
-webpack-genius@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/webpack-genius/-/webpack-genius-4.1.1.tgz#ce4e44fe827d90d6a5de0aa9e255899b7e2894ab"
-  integrity sha512-679Wn7nkbiCUpuOrmpxTrU1W64VxsVESmnM0sJnOKzqdB4ctqQPMS0Z/PzplfOMM8LDFNYvijRU4N0EtE6hbyg==
+webpack-genius@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.npmjs.org/webpack-genius/-/webpack-genius-4.1.4.tgz#7e354279bb4eb0cd8613c64d23fe8e8cef5378e4"
+  integrity sha512-/lySqWEahaNgG7Qeg4wOEiH9Pf2LSBYxuNz+SWmd2L7XU35/TfF4WYEBpHAJereriSOboFFqCwWb+qvzUZ6VsA==
   dependencies:
     "@babel/core" "^7.7.2"
     "@babel/plugin-proposal-class-properties" "^7.7.0"
@@ -7864,6 +7864,7 @@ webpack-genius@^4.1.1:
     optimize-css-assets-webpack-plugin "^5.0.3"
     postcss-loader "^3.0.0"
     react-dev-utils "^9.1.0"
+    react-hot-loader "^4.12.18"
     sass-loader "^8.0.0"
     style-loader "^1.0.0"
     ts-node "^8.5.0"
