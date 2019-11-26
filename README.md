@@ -1,4 +1,4 @@
-# redux-model-web-demo
+# demo-react-hooks
 
 It's a simple project for package [redux-model](https://github.com/fwh1990/redux-model)
 
