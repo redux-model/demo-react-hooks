@@ -7919,10 +7919,10 @@ webpack-dev-server@^3.9.0:
     ws "^6.2.1"
     yargs "12.0.5"
 
-webpack-genius@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/webpack-genius/-/webpack-genius-4.5.0.tgz#f0c03ef3bde07d0635eea4b9034b6857b3c8ca2e"
-  integrity sha512-hMDbQ/V9hpc4Gz3YwH+kDt1QnSKJS2CgLhiKEOTHbu1esjyPv2jzA0nu/DnpI6Lbll9IKM3cgjv6ZBfn2AEAmQ==
+webpack-genius@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.npmjs.org/webpack-genius/-/webpack-genius-4.5.1.tgz#c418709256c886261293c04489dfb04f34910d28"
+  integrity sha512-Y4zAUGJqCVWRRstiwSp0uKbnHsSej0Z+Lcfla6PC5Zq69uVX2fFjRPFQU9aTYnIYNGm1LzBEF3C2UJ5c3m9ayA==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-class-properties" "^7.7.4"
