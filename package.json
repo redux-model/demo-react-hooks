@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@redux-model/web": "^6.7.1",
-    "core-js": "^3.4.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
@@ -21,7 +20,7 @@
     "@types/react-redux": "^7.1.5",
     "@types/redux-logger": "^3.0.7",
     "redux-logger": "^3.0.6",
-    "typescript": "^3.7.2",
-    "webpack-genius": "^4.6.5"
+    "typescript": "^3.7.3",
+    "webpack-genius": "^4.7.0"
   }
 }
