@@ -7,7 +7,7 @@
     "start": "yarn && webpack-genius start"
   },
   "dependencies": {
-    "@redux-model/web": "^6.7.1",
+    "@redux-model/web": "^6.7.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
