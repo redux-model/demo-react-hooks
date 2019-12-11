@@ -8099,10 +8099,10 @@ webpack-dev-server@^3.9.0:
     ws "^6.2.1"
     yargs "12.0.5"
 
-webpack-genius@^4.7.4:
-  version "4.7.4"
-  resolved "https://registry.npmjs.org/webpack-genius/-/webpack-genius-4.7.4.tgz#87883da4697d74e5bff8d20de74d11daaeb645fe"
-  integrity sha512-YtY9BN61AXla/j4VV4WUKqUwoUG8CUH3LCtfvt/T6KSi1cUPu4KuDiWe8hTzx5ER0BMIqsfzj+nu9dGdcgWLNg==
+webpack-genius@^4.7.6:
+  version "4.7.6"
+  resolved "https://registry.npmjs.org/webpack-genius/-/webpack-genius-4.7.6.tgz#f58d722b204b4132b44dd9b87ab825fc4e66b08b"
+  integrity sha512-wlDNxe8AaRutjrzdn0tuLaG0KX/O4hoDCJ9THtJexNTS0tb/nLHEWEccK2Wbxid5sffD20LsMipPefKozdSZEg==
   dependencies:
     "@babel/core" "^7.7.5"
     "@babel/plugin-proposal-class-properties" "^7.7.4"
