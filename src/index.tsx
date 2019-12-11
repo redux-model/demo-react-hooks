@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
-import { applyMiddleware, compose } from 'redux';
-import { rootReducers } from './reducers';
-import { rootMiddleWares } from './middleware';
-import App from '../components/App';
+import { applyMiddleware, compose, Middleware } from 'redux';
+import App from './components/App';
 import { createReduxStore, PersistGate } from '@redux-model/web';
+import { createLogger } from 'redux-logger';
+import { summaryModel } from './models/SummaryModel';
+
+const rootMiddleWares: Middleware[] = [
+  createLogger({
+    collapsed: true,
+    diff: true,
+    duration: true,
+  }),
+];
 
 const store = createReduxStore({
-  reducers: rootReducers,
+  reducers: {
+    ...summaryModel.register(),
+  },
   enhancer: compose(applyMiddleware(...rootMiddleWares)),
   persist: {
     version: '0.0.1',
