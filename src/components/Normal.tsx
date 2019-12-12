@@ -1,19 +1,6 @@
-import React, { CSSProperties, FunctionComponent, useCallback } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { counterModel } from '../models/CounterModel';
-
-const styles: CSSProperties = {
-  width: 300,
-  height: 300,
-  borderWidth: 1,
-  borderColor: '#ddd',
-  borderStyle: 'solid',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  margin: 20,
-  padding: 15,
-};
+import styles from './Normal.scss';
 
 const Normal: FunctionComponent = () => {
   const count = counterModel.useData((data) => data.amount);
@@ -27,7 +14,7 @@ const Normal: FunctionComponent = () => {
   }, []);
 
   return (
-    <div style={styles}>
+    <div className={styles.wrapper}>
       <h3>Normal Effect:</h3>
       <p>You clicked <span style={{ fontSize: 18, color: '#f00' }}>{count}</span> times.</p>
       <div>

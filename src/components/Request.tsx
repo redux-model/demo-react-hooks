@@ -1,19 +1,6 @@
-import React, { CSSProperties, FunctionComponent, useCallback } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { npmInfoModel } from '../models/NpmInfoModel';
-
-const styles: CSSProperties = {
-  width: 600,
-  height: 300,
-  padding: 15,
-  borderWidth: 1,
-  borderColor: '#ddd',
-  borderStyle: 'solid',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-start',
-  justifyContent: 'center',
-  margin: 20,
-};
+import styles from './Request.less';
 
 const Request: FunctionComponent = () => {
   const npmInfo = npmInfoModel.useData();
@@ -39,7 +26,7 @@ const Request: FunctionComponent = () => {
   }, []);
 
   return (
-    <div style={styles}>
+    <div className={styles.wrapper}>
       <h3 style={{ textAlign: 'center', width: '100%' }}>Fetch Effect:</h3>
       <p>Package: {npmInfo._id || '--'}</p>
       <p>License: {npmInfo.license || '--'}</p>

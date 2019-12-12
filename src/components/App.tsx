@@ -2,10 +2,11 @@ import React, { FunctionComponent } from 'react';
 import Normal from './Normal';
 import Request from './Request';
 import Summary from './Summary';
+import styles from './App.styl';
 
 const App: FunctionComponent = () => {
   return (
-    <div style={{ flexDirection: 'row', display: 'flex' }}>
+    <div className={styles.wrapper}>
       <Normal />
       <Request />
       <Summary />
