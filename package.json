@@ -4,7 +4,8 @@
   "main": "src/index.tsx",
   "license": "MIT",
   "scripts": {
-    "start": "yarn && webpack-genius start"
+    "start": "yarn && webpack-genius start",
+    "build": "webpack-genius build --env production"
   },
   "dependencies": {
     "@redux-model/web": "^6.7.3",
@@ -21,6 +22,6 @@
     "@types/redux-logger": "^3.0.7",
     "redux-logger": "^3.0.6",
     "typescript": "^3.7.3",
-    "webpack-genius": "^4.9.0"
+    "webpack-genius": "^4.10.1"
   }
 }
