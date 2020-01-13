@@ -24,6 +24,9 @@ const store = createReduxStore({
     version: '0.0.1',
     key: 'demo-react-hooks',
     storage: localStorage,
+    whitelist: {
+      summaryModel,
+    },
   },
 });
 
