@@ -7,6 +7,14 @@ export const $api = new HttpService({
       Accept: 'application/json',
     };
   },
+  isSuccess: (response) => {
+    console.log(response.data);
+    // if (response.data._id === 'react-native') {
+    //   return false;
+    // }
+
+    return true;
+  },
   onRespondError: (response: HttpResponse<{ error: string, reason: string }>, transform) => {
     if (response.data && response.data.reason) {
       transform.message = response.data.reason;
