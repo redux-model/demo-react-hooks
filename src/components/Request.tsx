@@ -1,10 +1,15 @@
 import React, { FunctionComponent, useCallback } from 'react';
 import { npmInfoModel } from '../models/NpmInfoModel';
 import styles from './Request.less';
+import { Model } from '@redux-model/react';
 
 const Request: FunctionComponent = () => {
   const npmInfo = npmInfoModel.useData();
-  const loading = npmInfoModel.manage.useLoading();
+
+  const loading = Model.useLoading(
+    npmInfoModel.manage.useLoading(),
+    npmInfoModel.combo.useLoading(),
+  );
 
   const handleClick = useCallback(() => {
     npmInfoModel.manage('react-native')
@@ -18,7 +23,9 @@ const Request: FunctionComponent = () => {
   }, []);
 
   const handleClick2 = useCallback(() => {
-    npmInfoModel.manage('not-existed-package');
+    npmInfoModel.combo('not-existed-package').catch((e) => {
+      alert(e.message);
+    });
   }, []);
 
   const handleReset = useCallback(() => {

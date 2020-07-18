@@ -1,6 +1,6 @@
-import { HttpResponse, HttpService } from '@redux-model/web';
+import { HttpService } from '@redux-model/react';
 
-export const $api = new HttpService({
+export const $api = new HttpService<{ error: string, reason: string }>({
   baseUrl: 'https://registry.npm.taobao.org',
   headers: () => {
     return {
@@ -15,16 +15,16 @@ export const $api = new HttpService({
 
     return true;
   },
-  onRespondError: (response: HttpResponse<{ error: string, reason: string }>, transform) => {
+  onRespondError: (response, transform) => {
     if (response.data && response.data.reason) {
       transform.message = response.data.reason;
     }
   },
-  onShowSuccess: (successText: string) => {
+  onShowSuccess: (successText) => {
     console.info(successText);
     alert(successText);
   },
-  onShowError: (errorText: string) => {
+  onShowError: (errorText) => {
     console.error(errorText);
     alert(errorText);
   },

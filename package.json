@@ -8,7 +8,7 @@
     "build": "webpack-genius build --env production"
   },
   "dependencies": {
-    "@redux-model/web": "^6.9.1",
+    "@redux-model/react": "^7.0.0-beta.13",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -24,6 +24,6 @@
     "@types/redux-logger": "^3.0.7",
     "redux-logger": "^3.0.6",
     "typescript": "^3.7.4",
-    "webpack-genius": "^4.13.2"
+    "webpack-genius": "^4.13.7"
   }
 }

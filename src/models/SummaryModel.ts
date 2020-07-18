@@ -1,4 +1,4 @@
-import { Effects, Model } from '@redux-model/web';
+import { Effects, Model } from '@redux-model/react';
 import { counterModel } from './CounterModel';
 import { npmInfoModel } from './NpmInfoModel';
 

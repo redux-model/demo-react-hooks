@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
-import { applyMiddleware, compose, Middleware } from 'redux';
+import { Middleware } from 'redux';
 import App from './components/App';
-import { createReduxStore, PersistGate } from '@redux-model/web';
+import { createReduxStore, PersistGate } from '@redux-model/react';
 import { createLogger } from 'redux-logger';
 import { summaryModel } from './models/SummaryModel';
 
@@ -16,15 +16,12 @@ const rootMiddleWares: Middleware[] = [
 ];
 
 const store = createReduxStore({
-  reducers: {
-    ...summaryModel.register(),
-  },
-  enhancer: compose(applyMiddleware(...rootMiddleWares)),
+  middleware: rootMiddleWares,
   persist: {
-    version: '0.0.1',
+    version: '0.0.2',
     key: 'demo-react-hooks',
-    storage: localStorage,
-    whitelist: {
+    storage: 'local',
+    allowlist: {
       summaryModel,
     },
   },

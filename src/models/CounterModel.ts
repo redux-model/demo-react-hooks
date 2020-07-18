@@ -1,4 +1,4 @@
-import { Model } from '@redux-model/web';
+import { Model } from '@redux-model/react';
 
 type Data = {
   amount: number;

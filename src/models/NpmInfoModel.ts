@@ -1,5 +1,6 @@
-import { Model } from '@redux-model/web';
+import { Model } from '@redux-model/react';
 import { $api } from '../libraries/httpService/$api';
+import { counterModel } from './CounterModel';
 
 interface Response {
   _id: string;
@@ -16,10 +17,13 @@ class NpmInfoModel extends Model<Data> {
       .throttle(1000)
       .onSuccess((_, action) => {
         return action.response;
+      })
+      .afterSuccess(() => {
+        counterModel.increase();
       });
   });
 
-  async combo(packageName: string) {
+  combo = this.compose(async (packageName: string) => {
     const info = await $api.getAsync<Response>({
       uri: '/' + packageName,
       query: {
@@ -30,7 +34,7 @@ class NpmInfoModel extends Model<Data> {
     this.changeReducer((state) => {
       state.homepage = info.response.homepage;
     });
-  }
+  });
 
   reset = this.action(() => {
     return {};
