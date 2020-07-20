@@ -14,7 +14,9 @@ class NpmInfoModel extends Model<Data> {
   manage = $api.action((packageName: string) => {
     return this
       .get<Response>('/' + packageName)
-      .throttle(1000)
+      .throttle({
+        duration: 1000,
+      })
       .onSuccess((_, action) => {
         return action.response;
       })

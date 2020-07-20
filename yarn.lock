@@ -1137,20 +1137,20 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@redux-model/core@^7.0.0-beta.13":
-  version "7.0.0-beta.13"
-  resolved "https://registry.npmjs.org/@redux-model/core/-/core-7.0.0-beta.13.tgz#3993331a4b3dbfbc1f3b0ad0a1f7f64ada0d80fc"
-  integrity sha512-NtaSxVYzKV24sHltmNR5z6ygQuCjUwEVkT8ZOtLl556wSpwYGykWfEBg8VAEjzwybCMwWyoum/XuCuejqQvSEQ==
+"@redux-model/core@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/@redux-model/core/-/core-7.0.0.tgz#3da620228ee02e26af46005a70305b49d1b9aa8c"
+  integrity sha512-oZx/CHz7xzlNZrkIqDAFb0XSNsu5RHCJMgu8lPrub6XhcGtrXwDPglD4WKNvJRMwDQpnMMRiUIfG40mDtp4iUA==
   dependencies:
     clone "2.1.2"
     immer "7.0.5"
 
-"@redux-model/react@^7.0.0-beta.13":
-  version "7.0.0-beta.13"
-  resolved "https://registry.npmjs.org/@redux-model/react/-/react-7.0.0-beta.13.tgz#d92fa6f70e2645ec43f365968ba2edf10ac896e1"
-  integrity sha512-a+v2bAX1ZRz3wvpITJeCUqBPnih+N0Wiwwj5xG88o0QTTpp9RSYbdmNPRuPPwszmVga2+E4929O+QUn8Ejku1A==
+"@redux-model/react@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/@redux-model/react/-/react-7.0.0.tgz#84ca22aec5652a7c13e5d2cfe54e7229fe4325d5"
+  integrity sha512-JiFwGrt1Dro6UMe1k2leKrBSNHHygBm+IiQYCvqS0mfVyZzxvx5ZCUX7O4XGxOnP9e6AR/YFSWYV1vp9PKYvrA==
   dependencies:
-    "@redux-model/core" "^7.0.0-beta.13"
+    "@redux-model/core" "^7.0.0"
     axios "0.19.2"
     tslib "2.0.0"
 
