@@ -8,7 +8,7 @@ interface Data {
 }
 
 class SummaryModel extends Model<Data> {
-  protected initReducer(): Data {
+  protected initialState(): Data {
     return {
       times: 0,
     };

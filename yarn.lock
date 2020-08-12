@@ -1137,20 +1137,20 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@redux-model/core@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/@redux-model/core/-/core-7.0.0.tgz#3da620228ee02e26af46005a70305b49d1b9aa8c"
-  integrity sha512-oZx/CHz7xzlNZrkIqDAFb0XSNsu5RHCJMgu8lPrub6XhcGtrXwDPglD4WKNvJRMwDQpnMMRiUIfG40mDtp4iUA==
+"@redux-model/core@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npm.taobao.org/@redux-model/core/download/@redux-model/core-8.0.0.tgz#46676fd3f75c89df34beabf2a4b0126251480724"
+  integrity sha1-Rmdv0/dcid80vqvypLASYlFIByQ=
   dependencies:
     clone "2.1.2"
-    immer "7.0.5"
+    immer "7.0.7"
 
-"@redux-model/react@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/@redux-model/react/-/react-7.0.0.tgz#84ca22aec5652a7c13e5d2cfe54e7229fe4325d5"
-  integrity sha512-JiFwGrt1Dro6UMe1k2leKrBSNHHygBm+IiQYCvqS0mfVyZzxvx5ZCUX7O4XGxOnP9e6AR/YFSWYV1vp9PKYvrA==
+"@redux-model/react@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npm.taobao.org/@redux-model/react/download/@redux-model/react-8.0.0.tgz#563505c459a7aa0d9028af763740b92ef7c06df2"
+  integrity sha1-VjUFxFmnqg2QKK92N0C5LvfAbfI=
   dependencies:
-    "@redux-model/core" "^7.0.0"
+    "@redux-model/core" "8.0.0"
     axios "0.19.2"
     tslib "2.0.0"
 
@@ -4735,10 +4735,10 @@ immer@1.10.0:
   resolved "https://registry.npmjs.org/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
 
-immer@7.0.5:
-  version "7.0.5"
-  resolved "https://registry.npmjs.org/immer/-/immer-7.0.5.tgz#8af347db5b60b40af8ae7baf1784ea4d35b5208e"
-  integrity sha512-TtRAKZyuqld2eYjvWgXISLJ0ZlOl1OOTzRmrmiY8SlB0dnAhZ1OiykIDL5KDFNaPHDXiLfGQFNJGtet8z8AEmg==
+immer@7.0.7:
+  version "7.0.7"
+  resolved "https://registry.npmjs.org/immer/-/immer-7.0.7.tgz#9dfe713d49bf871cc59aedfce59b1992fa37a977"
+  integrity sha512-Q8yYwVADJXrNfp1ZUAh4XDHkcoE3wpdpb4mC5abDSajs2EbW8+cGdPyAnglMyLnm7EF6ojD2xBFX7L5i4TIytw==
 
 import-cwd@^2.0.0:
   version "2.1.0"

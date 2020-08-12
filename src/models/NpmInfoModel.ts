@@ -33,7 +33,7 @@ class NpmInfoModel extends Model<Data> {
       },
     });
 
-    this.changeReducer((state) => {
+    this.changeState((state) => {
       state.homepage = info.response.homepage;
     });
   });
@@ -42,7 +42,7 @@ class NpmInfoModel extends Model<Data> {
     return {};
   });
 
-  protected initReducer(): Data {
+  protected initialState(): Data {
     return {};
   }
 }
