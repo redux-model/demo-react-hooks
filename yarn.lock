@@ -1137,22 +1137,23 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@redux-model/core@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.npm.taobao.org/@redux-model/core/download/@redux-model/core-8.0.0.tgz#46676fd3f75c89df34beabf2a4b0126251480724"
-  integrity sha1-Rmdv0/dcid80vqvypLASYlFIByQ=
+"@redux-model/core@8.2.0":
+  version "8.2.0"
+  resolved "https://registry.npmjs.org/@redux-model/core/-/core-8.2.0.tgz#696cf4cbe3195c0d5763e5dfc171af770811cca9"
+  integrity sha512-22oMkCB3aB8OmXmnECgAU5VvoCTztAbICG8F/ylB1R/JPShvH0elHUHPIvn4SYdIRLmZImkcNwlYpLfEAQdODQ==
   dependencies:
     clone "2.1.2"
-    immer "7.0.7"
+    immer "7.0.9"
 
-"@redux-model/react@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.npm.taobao.org/@redux-model/react/download/@redux-model/react-8.0.0.tgz#563505c459a7aa0d9028af763740b92ef7c06df2"
-  integrity sha1-VjUFxFmnqg2QKK92N0C5LvfAbfI=
+"@redux-model/react@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.npmjs.org/@redux-model/react/-/react-8.2.0.tgz#2e99c1e3a9ca7288f6c4c7dbedb36c71a68ada6b"
+  integrity sha512-VFVkjn+PHxCcJLC1Fy8slpYWoUA3hdP6ig2naUPYydTtTlxrKmNGJ0PLGOqmuzeJrxUVVO2/PRszClxKrXznBQ==
   dependencies:
-    "@redux-model/core" "8.0.0"
+    "@redux-model/core" "8.2.0"
     axios "0.19.2"
-    tslib "2.0.0"
+    promise-listen-catch "1.0.0"
+    tslib "2.0.1"
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -4735,10 +4736,10 @@ immer@1.10.0:
   resolved "https://registry.npmjs.org/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
 
-immer@7.0.7:
-  version "7.0.7"
-  resolved "https://registry.npmjs.org/immer/-/immer-7.0.7.tgz#9dfe713d49bf871cc59aedfce59b1992fa37a977"
-  integrity sha512-Q8yYwVADJXrNfp1ZUAh4XDHkcoE3wpdpb4mC5abDSajs2EbW8+cGdPyAnglMyLnm7EF6ojD2xBFX7L5i4TIytw==
+immer@7.0.9:
+  version "7.0.9"
+  resolved "https://registry.npmjs.org/immer/-/immer-7.0.9.tgz#28e7552c21d39dd76feccd2b800b7bc86ee4a62e"
+  integrity sha512-Vs/gxoM4DqNAYR7pugIxi0Xc8XAun/uy7AQu4fLLqaTBHxjOP9pJ266Q9MWA/ly4z6rAFZbvViOtihxUZ7O28A==
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -7066,6 +7067,11 @@ promise-inflight@^1.0.1:
   resolved "https://registry.npmjs.org/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
+promise-listen-catch@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/promise-listen-catch/-/promise-listen-catch-1.0.0.tgz#8c56875258b47449055763a204b28d572a5d383d"
+  integrity sha512-1Vce+A5+QcKn7acpz4WnP8o9yTTnTxCgkyCVEYiWtLgbJxtl82FIbcMSi+LB07E/Afjif4XFp7HYI7UZEmWNfg==
+
 prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
@@ -8714,10 +8720,10 @@ ts-node@8.10.2:
     source-map-support "^0.5.17"
     yn "3.1.1"
 
-tslib@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
-  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
+tslib@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
+  integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
 tslib@^1.10.0, tslib@^1.9.0:
   version "1.10.0"
@@ -8764,10 +8770,10 @@ typescript@3.9.5:
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
   integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
-typescript@^3.7.4:
-  version "3.7.4"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
-  integrity sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
+typescript@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.0.2.tgz#7ea7c88777c723c681e33bf7988be5d008d05ac2"
+  integrity sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
