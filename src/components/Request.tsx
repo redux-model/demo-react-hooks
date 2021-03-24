@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useCallback } from 'react';
 import { npmInfoModel } from '../models/NpmInfoModel';
-import styles from './Request.less';
+import styles from './Request.module.less';
 import { Model } from '@redux-model/react';
 
 const Request: FunctionComponent = () => {

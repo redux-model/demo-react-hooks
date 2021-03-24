@@ -1,29 +1,25 @@
 {
   "name": "demo-react-hooks",
-  "version": "1.0.0",
   "main": "src/index.tsx",
   "license": "MIT",
   "scripts": {
-    "start": "yarn && webpack-genius start",
-    "build": "webpack-genius build --env production"
+    "start": "yarn && vite-react",
+    "build": "vite-react build"
   },
   "dependencies": {
-    "@redux-model/react": "^8.2.0",
+    "@redux-model/react": "^9.0.4",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-redux": "^7.1.3",
-    "redux": "^4.0.5"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.149",
     "@types/node": "^13.1.6",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
-    "@types/react-redux": "^7.1.5",
     "@types/redux-logger": "^3.0.7",
     "redux-logger": "^3.0.6",
     "typescript": "^4.0.2",
-    "webpack-genius": "^4.13.7"
+    "vite-react": "^0.0.23"
   }
 }

@@ -1,4 +1,4 @@
-import { Effects, Model } from '@redux-model/react';
+import { Model, Subscriptions } from '@redux-model/react';
 import { counterModel } from './CounterModel';
 import { npmInfoModel } from './NpmInfoModel';
 
@@ -14,7 +14,7 @@ class SummaryModel extends Model<Data> {
     };
   }
 
-  protected effects(): Effects<Data> {
+  protected subscriptions(): Subscriptions<Data> {
     return [
 
       counterModel.increase.onSuccess((state) => {

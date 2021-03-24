@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import Normal from './Normal';
 import Request from './Request';
 import Summary from './Summary';
-import styles from './App.styl';
+import styles from './App.module.styl';
 
 const App: FunctionComponent = () => {
   return (

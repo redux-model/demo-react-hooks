@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { summaryModel } from '../models/SummaryModel';
-import styles from './Summary.css';
+import styles from './Summary.module.css';
 
 const Summary: FunctionComponent = () => {
   const { times, lastTime } = summaryModel.useData();

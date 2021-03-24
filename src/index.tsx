@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Provider } from 'react-redux';
-import { Middleware } from 'redux';
 import App from './components/App';
-import { createReduxStore, PersistGate } from '@redux-model/react';
+import { createReduxStore, PersistGate, Middleware, Provider } from '@redux-model/react';
 import { createLogger } from 'redux-logger';
 import { summaryModel } from './models/SummaryModel';
 

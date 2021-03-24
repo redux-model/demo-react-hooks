@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useCallback } from 'react';
 import { counterModel } from '../models/CounterModel';
-import styles from './Normal.scss';
+import styles from './Normal.module.scss';
 
 const Normal: FunctionComponent = () => {
   const count = counterModel.useData((data) => data.amount);
