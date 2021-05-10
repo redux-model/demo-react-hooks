@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@redux-model/react": "^9.0.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
